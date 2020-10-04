@@ -1,0 +1,15 @@
+::ng-deep body{
+  background-color: #303030;
+}
+
+.show-text{
+  display: table-cell;
+  background: #e91e63;
+  color: #ffffff;
+  border-radius: 0.25rem;
+  height: 40vh;
+  width: 100vw;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 7.5vw;
+}
