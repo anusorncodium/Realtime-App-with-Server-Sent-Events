@@ -1,6 +1,7 @@
-<div class="show-text">{{text}}</div>
+<div class="show-text">{{message}}</div>
 
-<div class="input-text">
-    <input #text (keyup.enter)="updateText(text.value)">
-    <button (click)="updateText(text.value)">Add</button>
+<div class="input-text size-lg">
+    <input #text (keyup.enter)="setMessage(text.value)">
+    <button (click)="setMessage(text.value)">Set</button>
+    <button (click)="getMessage()">Get</button>
 </div>
