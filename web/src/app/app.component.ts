@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   text = 'web';
+
+  constructor() { }
+
+  updateText(text: string) {
+    this.text = text;
+  }
 }
