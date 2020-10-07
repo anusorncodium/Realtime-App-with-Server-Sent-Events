@@ -26,11 +26,11 @@ def messages(request):
 
         body = json.dumps(
             {
-                'message': request.data['message']
+                'message': 'Your message has been sent.'
             },
             cls=DjangoJSONEncoder) + '\n'
 
-        send_event('test-message', 'message', body)
+        send_event('test-message', 'message', request.data['message'])
 
         return HttpResponse(body, content_type='application/json')
 
